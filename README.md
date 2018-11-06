@@ -1,6 +1,6 @@
-# canvas-plugin-formatdatetz
+# canvas-plugin-randomise
 
-Plugin for canvas to add a formatdatetz function
+Plugin for canvas to add a randomise function
 
 # Development
 
@@ -16,17 +16,17 @@ For more information about any of these commands run `npm run ${task} -- --help`
 
 # Usage
 
-## formatdatetz
+## randomise
 
-* **Function**: formatdatetz
+* **Function**: randomise
 * **Accepts**: number
-* **Returns**: string
+* **Returns**: number
 
-Output a ms since epoch number as a formatted string according to a given timezone
+Output a randomised number based on tolerances
 
 Arguments
 
 |Name|Aliases|Types|Default|Description|
 |-|-|-|-|
-|Unnamed*||string||MomentJS Format with which to bucket (See https://momentjs.com/docs/#/displaying/)|
-|timezone||string||The timezone in which to display the formatted date|
+|inner|i, in|number|0.25|The inner tolerance, the percentage away from the original value|
+|outer|o, out|number|0.5|The inner tolerance, the percentage away from the original value|

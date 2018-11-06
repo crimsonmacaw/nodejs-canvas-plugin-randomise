@@ -1,7 +1,7 @@
 export const randomise = () => ({
   name: 'randomise',
   type: 'number',
-  help: 'Output a randomised number based on tollerances',
+  help: 'Output a randomised number based on tolerances',
   context: {
     types: ['number'],
   },
@@ -10,14 +10,14 @@ export const randomise = () => ({
       types: ['number'],
       aliases: ['i', 'in'],
       required: false,
-      help: 'The inner tollerance, the percentage away from the original value',
+      help: 'The inner tolerance, the percentage away from the original value',
     },
 
     outer: {
       types: ['number'],
       aliases: ['o', 'out'],
       required: false,
-      help: 'The outer tollerance, the percentage within the original value'
+      help: 'The outer tolerance, the percentage within the original value'
     }
   },
   fn: (context, args) => {
