@@ -1,5 +1,5 @@
 import { randomise } from './randomise';
 
-export const commonFunctions = [
+export const browserFunctions = [
   randomise
 ];
