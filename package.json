@@ -4,7 +4,7 @@
   "description": "plugin for canvas to add a randomise function",
   "main": "index.js",
   "kibana": {
-    "version": "7.3.1",
+    "version": "7.5.0",
     "templateVersion": "1.0.0"
   },
   "scripts": {
